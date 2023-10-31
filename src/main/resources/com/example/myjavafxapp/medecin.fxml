@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #40E0D0;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myjavafxapp.MedecinController">
+   <children>
+      <Label layoutX="60.0" layoutY="99.0" prefHeight="35.0" prefWidth="65.0" text="Nom" />
+      <Label layoutX="60.0" layoutY="184.0" text="Prénom" />
+      <TextField fx:id="nomTxt" layoutX="55.0" layoutY="134.0" prefHeight="35.0" prefWidth="174.0" />
+      <TextField fx:id="prenomtxt" layoutX="57.0" layoutY="210.0" prefHeight="35.0" prefWidth="174.0" />
+      <Label layoutX="60.0" layoutY="257.0" prefHeight="26.0" prefWidth="82.0" text="Téléphone" />
+      <TextField fx:id="telephonetxt" layoutX="57.0" layoutY="292.0" prefHeight="35.0" prefWidth="174.0" />
+      <Button fx:id="btnValider" layoutX="27.0" layoutY="348.0" mnemonicParsing="false" onAction="#insert" prefHeight="35.0" prefWidth="106.0" text="Valider" />
+      <Button fx:id="btnAnnuler" layoutX="142.0" layoutY="348.0" mnemonicParsing="false" onAction="#reset" prefHeight="35.0" prefWidth="106.0" text="Annuler" />
+      <TableView fx:id="medecintable" layoutX="269.0" layoutY="120.0" prefHeight="274.0" prefWidth="483.0">
+        <columns>
+          <TableColumn fx:id="idcolumn" prefWidth="88.199951171875" text="Identifiant" />
+            <TableColumn fx:id="nomcolumn" prefWidth="118.20001220703125" text="Nom" />
+            <TableColumn fx:id="prenomcolumn" prefWidth="146.40005493164062" text="Prenom" />
+          <TableColumn fx:id="telcolumn" minWidth="0.0" prefWidth="117.60003662109375" text="Telephone" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnModifier" layoutX="27.0" layoutY="394.0" mnemonicParsing="false" onAction="#update" prefHeight="35.0" prefWidth="106.0" text="Modifier" />
+      <Button fx:id="btnSupp" layoutX="142.0" layoutY="394.0" mnemonicParsing="false" onAction="#delete" prefHeight="35.0" prefWidth="106.0" text="Supprimer" />
+   </children>
+</AnchorPane>

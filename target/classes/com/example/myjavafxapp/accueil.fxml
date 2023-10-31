@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myjavafxapp.AccueilController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Fichier">
+            <items>
+                  <Menu mnemonicParsing="false" text="Ouvrir">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#LoadMedecin" onMenuValidation="#LoadMedecin" text="Medecin" />
+                      <MenuItem mnemonicParsing="false" onAction="#LoadConsultation" onMenuValidation="#LoadConsultation" text="Consultation" />
+                    </items>
+                  </Menu>
+              <MenuItem mnemonicParsing="false" text="Fermer" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Editer">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Supprimer" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Aide">
+            <items>
+              <MenuItem mnemonicParsing="false" text="A propos" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Version">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Afficher" />
+                  <MenuItem mnemonicParsing="false" text="Mise à jour" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <Pane prefHeight="506.0" prefWidth="104.0" style="-fx-background-color: #40E0D0;" BorderPane.alignment="CENTER" />
+   </left>
+   <bottom>
+      <Pane prefHeight="68.0" prefWidth="800.0" style="-fx-background-color: #40E0D0;" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <AnchorPane prefHeight="510.0" prefWidth="719.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="message" layoutX="46.0" layoutY="34.0" text="Label" textFill="#67cc64">
+               <font>
+                  <Font size="44.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
